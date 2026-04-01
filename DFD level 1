@@ -1,0 +1,13 @@
+DFD Level 1 – Description
+The Level 1 Data Flow Diagram provides a detailed breakdown of the internal processes of the Consent-Based Data Usage Tracker system.
+-Authenticate User
+The user provides login credentials, which are verified using the user database (D1). Upon successful authentication, an authorization token is generated.
+-Manage Consent
+The authenticated user submits consent requests. The system stores and manages consent details in the consent database (D2) and forwards consent check requests for verification.
+-Verify Consent
+When a data access request is made, the system verifies the user’s consent by checking stored consent records and data access policies stored in the data repository (D3). Only approved access is permitted.
+-Log Activity
+Every access event and system activity is recorded in the log database (D4). Unauthorized access attempts generate alerts that are sent to the admin for monitoring.
+-Generate Reports
+The admin can request usage reports and log summaries. The system retrieves log data from the database and generates detailed reports for review and compliance purposes.
+The system ensures secure, transparent, and consent-driven data usage by authenticating users, verifying consent, 
