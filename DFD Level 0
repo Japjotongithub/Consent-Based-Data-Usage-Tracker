@@ -1,0 +1,6 @@
+DFD Level 0 – Description
+-The Level 0 Data Flow Diagram (Context Diagram) represents the overall functionng of the Consent-Based Data Usage Tracker as a single process and shows its interaction with external entities.
+-The system interacts with two main external entities: User and Admin.
+-The User sends requests such as registration requests, consent provisioning, and data access requests to the system. Based on the granted consent, the system provides authorization tokens, filtered data access, and usage reports to the user.
+-The Admin interacts with the system to monitor data usage and manage system activities. The system sends violation alerts and usage reports to the admin, while the admin can issue administrative commands and request log reviews.
+-This level provides a high-level overview of how data flows between the users, administrators, and the Consent-Based Data Usage Tracker without showing internal processing details.
